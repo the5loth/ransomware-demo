@@ -1,10 +1,14 @@
 #!/bin/bash
-
+xmessage "$(printf "We have received your payment"!"")"
 cd .client
+sleep 1.5
+xmessage "$(printf "Sending your encyrption key to the server...")"
 cp device_key_encrypted.dat ../.server/
 cd ../.server/
 sudo bash decrypt-key.sh
+sleep 1
+xmessage "$(printf "We are decrypting your key...")"
 cp device_key.dat ../.client/
 cd ..
-echo "We have recieved your payment, you can now decrypt your files"
-xmessage "$(printf "We have received your payment"!"\nYou can now decrypt your files")"
+sleep 1.5
+xmessage "$(printf "You can now decrypt your files")"
