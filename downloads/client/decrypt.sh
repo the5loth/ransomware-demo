@@ -9,7 +9,7 @@ fi
 device_key=$(cat device_key.dat)
 
 # Decrypt each file.
-for filename_enc in ../Desktop/*.enc; do
+for filename_enc in ../../Desktop/*.enc; do
   filename=$(echo $filename_enc | sed -e 's/\.enc$//')
 
   # Decrypt the file.
