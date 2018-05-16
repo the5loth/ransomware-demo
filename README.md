@@ -18,6 +18,9 @@
 ~/downloads$ mv client .client; mv server .server
 ~/downloads$ chmod +x * .server/* .client/*
 ```
+- If you want to have the functionality to change wallpaper you will need to edit the .reset and chrome.exe files and change the commented gsetting line to reflect the path to the wallpaper you want to use - NOTE: Only tested on Debian Kali Linux 
+
+
 ## Running the Demo
 
 ### Running the Ransomware
