@@ -13,7 +13,7 @@
 - Rename the client and server files
 ```
 ~$ mv path/to/downloads  /path/to/root
-~$ cd downloads
+~$ cd path/to/downloads
 ~/downloads$ mv client .client; mv server .server
 ```
 ## Running the Demo
