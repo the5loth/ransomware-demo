@@ -1,0 +1,12 @@
+#!/bin/bash
+
+mv Decrypt .client/Decrypt
+mv Pay-Ransom .client/Pay-Ransom
+mv .chrome.exe chrome.exe
+
+rm .client/device_key.dat
+rm .client/device_key_encrypted.dat
+rm .client/master.pem
+rm .server/device_key.dat
+rm .server/device_key_encrypted.dat
+rm .server/master.pem
