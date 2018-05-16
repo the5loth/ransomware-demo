@@ -1,9 +1,14 @@
 #!/bin/bash
 
+## gsettings will set your background to the chosen path
+gsettings set org.gnome.desktop.background picture-uri file:///root/Downloads/gnome-background.xml
+
+## Returns paths to initial location
 mv Decrypt .client/Decrypt
 mv Pay-Ransom .client/Pay-Ransom
 mv .chrome.exe chrome.exe
 
+## Will remove all files created by the demo
 rm .client/device_key.dat
 rm .client/device_key_encrypted.dat
 rm .client/master.pem
