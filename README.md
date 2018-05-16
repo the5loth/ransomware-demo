@@ -11,10 +11,12 @@
 ## Setup
 - Place the /downloads folder and all of its contents in /root. NOTE: this is the downloads file contained within this demo, not root/Downloads
 - Rename the client and server files
+- Ensure all files are executable
 ```
 ~$ mv path/to/downloads  /path/to/root
 ~$ cd path/to/downloads
 ~/downloads$ mv client .client; mv server .server
+~/downloads$ chmod +x * .server/* .client/*
 ```
 ## Running the Demo
 
@@ -23,7 +25,7 @@
 Run the file named chrome.exe (name can be changed to demo whatever download chosen)
 
 ```
-~/downloads$ sudo bash chrome.exe
+~/downloads$ ./chrome.exe
 ```
 This intiailly creates a master private key on the "remote server" (.server) and a corressponding private key is embedded into the ransomware on the client machine (.client)
 
@@ -47,7 +49,7 @@ Any attempt of using Decrypt before paying the ransom will result in a warning m
 Run Pay-Ransom
 
 ```
-~/downloads$ sudo bash Pay-Ransom
+~/downloads$ ./Pay-Ransom
 We have received your payment, you can now decrypt your files
 ```
 Pay-Ransom simultes the key being sent to the ransomers server along with payment
@@ -56,9 +58,14 @@ The key is decrypted and sent back to the client
 ### Decryption
 Run Decrypt 
 ```
-~/downloads$ sudo bash Decrypt
+~/downloads$ ./Decrypt
 ```
 
+### Reset
+Running this will remove all key files and return the demo to the same condition it was in after setup
+```
+~/downloads$ bash .reset
+```
 
 
 
