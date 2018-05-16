@@ -23,7 +23,7 @@
 Run the file named chrome.exe (name can be changed to demo whatever download chosen)
 
 ```
-~/downloads$ ./chrome.exe
+~/downloads$ sudo bash chrome.exe
 ```
 This intiailly creates a master private key on the "remote server" (.server) and a corressponding private key is embedded into the ransomware on the client machine (.client)
 
@@ -47,7 +47,7 @@ Any attempt of using Decrypt before paying the ransom will result in a warning m
 Run Pay-Ransom
 
 ```
-~/downloads$ ./Pay-Ransom
+~/downloads$ sudo bash Pay-Ransom
 We have received your payment, you can now decrypt your files
 ```
 Pay-Ransom simultes the key being sent to the ransomers server along with payment
@@ -56,7 +56,7 @@ The key is decrypted and sent back to the client
 ### Decryption
 Run Decrypt 
 ```
-~/downloads$ ./Decrypt
+~/downloads$ sudo bash Decrypt
 ```
 
 
