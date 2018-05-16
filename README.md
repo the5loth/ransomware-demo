@@ -1,4 +1,4 @@
-# ransomware-demo
+# Ransomware Demo
 
 ## Disclaimer
 
