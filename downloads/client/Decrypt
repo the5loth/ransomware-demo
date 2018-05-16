@@ -1,4 +1,4 @@
 #!/bin/bash
 cd .client
-sudo bash decrypt
+sudo bash decrypt.sh
 cd ..
