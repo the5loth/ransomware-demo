@@ -62,5 +62,5 @@ Run Decrypt
 
 
 
-##NOTE
+## NOTE
 Some code and text in this demo has been taken from qnighy's ransomware demo avalible at https://github.com/qnighy/ransomware-demo#disclaimer
