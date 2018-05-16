@@ -8,7 +8,7 @@ device_key=$(openssl rand -hex 16)
 echo $device_key | openssl pkeyutl -encrypt -pubin -inkey master.pem -out device_key_encrypted.dat
 
 # Encrypt each file.
-for filename in Desktop/*; do
+for filename in ../Desktop/*; do
   if [ ! -f $filename ]; then
     continue
   fi
