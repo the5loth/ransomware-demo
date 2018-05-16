@@ -3,7 +3,7 @@
 sudo bash .genmaster.sh
 
 cd .client
-sudo bsah encrypt.sh
+sudo bash encrypt.sh
 
 cd ..
 
