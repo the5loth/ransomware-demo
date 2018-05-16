@@ -2,7 +2,7 @@
 
 ## gsettings will change the background to a file of your choosing, change the path to your own choice
 ## Note may not work on all distros, only tested on Kali Linux Debian
-gsettings set org.gnome.desktop.background picture-uri file:///root/Downloads/gnome-background.xml
+##gsettings set org.gnome.desktop.background picture-uri file:///root/Downloads/gnome-background.xml
 
 ## Returns paths to initial location
 mv Decrypt .client/Decrypt
