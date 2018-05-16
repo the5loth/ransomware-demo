@@ -3,7 +3,7 @@
 cd .client
 cp device_key_encrypted.dat ../.server/
 cd ../.server/
-./decrypt-key.sh
+sudo bash decrypt-key.sh
 cp device_key.dat ../.client/
 cd ..
 echo "We have recieved your payment, you can now decrypt your files"
